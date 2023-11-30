@@ -7,7 +7,9 @@ class App
         //code gaat hier!
       let canvas = document.getElementById("canvasid");
       let g = canvas.getContext("2d");
-      g.fillRect(0,0,10,10);
+      g.fillStyle = "brown";
+      g.fillRect(0,0,canvas.width,canvas.height);
+      
       console.log(canvas);
     }
 }
