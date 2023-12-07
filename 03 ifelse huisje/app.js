@@ -5,52 +5,104 @@ class App
     {
         console.log("hello world!");
         //code gaat hier!
-       //Je past de code aan met "Hidden" en "Style"
-       //Je gaat de code dan weer opvragen met "Id" en "Class"
+      let canvas = document.getElementById("canvasid");
+      let g = canvas.getContext("2d");
+      g.beginPath()
+      g.fillStyle = "brown";
+      g.moveTo(30,10);
+      g.lineTo(20,30);
+      g.lineTo(60,40);
+      g.lineTo(70,20);
+      g.closePath();
+      g.stroke();
+      g.fill()
 
-       let title = document.getElementById("newstitle");
-       console.log(title);
+      g.fillStyle = "grey";
+      g.beginPath()
+      g.moveTo(20,30);
+      g.lineTo(20,50);
+      g.lineTo(60,60);
+      g.lineTo(60,40);
+      g.closePath();
+      g.stroke();
+      g.fill();
+      
+      g.fillStyle = "grey";
+      g.beginPath()
+      g.moveTo(60,40);
+      g.lineTo(70,20);
+      g.lineTo(80,30);
+      g.lineTo(60,40);
+      g.closePath();
+      g.stroke();
+      g.fill();
 
-       let random = Math.random();
-       console.log(random);
-       if(random < 0.2)
-       {
-        title.style.backgroundColor = "#FF0000";
-       }
-       else if(random >= 0.2 && random <= 0.6)
-       {
-        title.style.backgroundColor = "#000FF0";
-       }
-       else if(random >= 0.6 && random <= 0.75)
-       {
-        title.style.backgroundColor = "#0FF000";
-       }
-       else
-       {
-        title.style.backgroundColor = "#00FF00";
-       }
-       let newsitem1 = document.getElementsByClassName("gamenews")[0]
-        random = Math.random();
-       if(random < 0.2)
-       {
-        newsitem1.style.backgroundColor ="#0FF000";
-       }
-       else
-       {
-        newsitem1.style.backgroundColor = "00FF00";
-       }
-       let newsitem2 = document.getElementsByClassName("gamenews")[1]
-        random = Math.random();
-       if(random < 0.2)
-       {
-        newsitem2.style.backgroundColor ="#000FF0";
-       }
-       else
-       {
-        newsitem2.style.backgroundColor = "FF0000";
-       }
+      g.fillStyle = "grey";
+      g.beginPath()
+      g.moveTo(80,30);
+      g.lineTo(80,50);
+      g.lineTo(60,60);
+      g.lineTo(60,40);
+      g.closePath();
+      g.stroke();
+      g.fill();
+      
+      
+      g.fillStyle = "yellow";
+      let random = Math.random();
+      console.log(random);
+      if(random < 0.5){
+        g.fillStyle = "black"
+      }
+      g.beginPath()
+      g.moveTo(25,35);
+      g.lineTo(27,37);
+      g.lineTo(27,47);
+      g.lineTo(25,45);
+      g.lineTo(25,35);
+      g.closePath();
+      g.stroke();
+      g.fill();
+
+      g.fillStyle = "yellow";
+      random = Math.random();
+      console.log(random);
+      if(random < 0.5){
+        g.fillStyle = "black"
+      }
+      g.beginPath()
+      g.moveTo(35,37);
+      g.lineTo(37,39);
+      g.lineTo(37,49);
+      g.lineTo(35,47);
+      g.lineTo(35,37);
+      g.closePath();
+      g.stroke();
+      g.fill();
+
+      g.fillStyle = "yellow";
+      random = Math.random();
+      console.log(random);
+      if(random < 0.5){
+        g.fillStyle = "black"
+      }
+      g.beginPath()
+      g.moveTo(45,39);
+      g.lineTo(47,41);
+      g.lineTo(47,51);
+      g.lineTo(45,49);
+      g.lineTo(45,39);
+      g.closePath();
+      g.stroke();
+      g.fill();
+      console.log(canvas);
     }
 }
 
 let app = new App();
 app.runApplication();
+
+
+console.log(app.greeting);
+console.log("appNaam: " + app.appNaam);
+console.log("versienummer: " + app.versienummer);
