@@ -64,6 +64,11 @@ class App
         console.log("hello world!");
         //code gaat hier!
         superMooieGlobalFunction();
+        this.mario();
+    let bowser = this.bowser();
+console.log(bowser);
+let duo = this.duo(6,6);
+console.log(duo);
     }
     newClassFunction()
     {
@@ -76,6 +81,27 @@ class App
         console.log(aArgument);
     }
 
+    mario()
+    {
+        console.log("MARIO!!")
+    }
+
+    bowser()
+    {
+        return "BWAHAHA!!"
+    }
+
+    duo(getal, getal2)
+    {
+        return getal + getal2
+    }
+
+    wario()
+    {
+        console.log("HOHO!!")
+    }
+
+
 }
 
 
@@ -84,3 +110,9 @@ let app = new App();
 app.runApplication();
 app.anotherFunctionWithArguments("mijn argument is frikandellen zijn lekker.");
 app.newClassFunction();
+app.mario();
+let bowser = app.bowser();
+console.log(bowser);
+let duo = app.duo(6,6);
+console.log(duo);
+app.wario();
