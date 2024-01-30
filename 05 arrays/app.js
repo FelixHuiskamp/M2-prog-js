@@ -60,9 +60,14 @@ class App
         headersByCssClass[2].innerText = "commentaar ";
         headersByCssClass[3].innerText = "waarom ";
         headersByCssClass[4].innerText = "omdat ";
-    }
 
-    
+        let data = ["nieuws", "reviews", "commentaar", "waarom", "omdat"]
+        
+        for  (let i = 0; i < data.length; i++) {
+            headersByCssClass[i].innerText = i + ":"+ data [i];
+         }
+
+    } 
 }
 
 let app = new App();
