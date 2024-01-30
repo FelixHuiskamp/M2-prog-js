@@ -39,6 +39,27 @@ class App
             const element = nummers [i];
             console.log(i + ":"+ element);
         }
+
+        let headersByCssClass = document.getElementsByClassName("bandName");
+        
+        
+        for  (let i = 0; i < headersByCssClass.length; i++) {
+            const element = headersByCssClass [i];
+            console.log(i + ":"+ element);
+            console.log(element.innerText)
+        }
+
+        for  (let i = 0; i < headersByCssClass.length; i++) {
+            const element = headersByCssClass [i];
+            console.log(i + ":"+ element);
+            element.innerText = "huh???";
+        }
+
+        headersByCssClass[0].innerText = "nieuws ";
+        headersByCssClass[1].innerText = "reviews";
+        headersByCssClass[2].innerText = "commentaar ";
+        headersByCssClass[3].innerText = "waarom ";
+        headersByCssClass[4].innerText = "omdat ";
     }
 
     
